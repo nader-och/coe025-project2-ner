@@ -1,0 +1,83 @@
+{
+  "per_type": {
+    "Chemical": {
+      "precision": 0.9221841704718418,
+      "recall": 0.9064896203478586,
+      "f1": 0.9142695463548053,
+      "tp": 4847,
+      "fp": 409,
+      "fn": 500
+    },
+    "Disease": {
+      "precision": 0.8166627987932235,
+      "recall": 0.8291705937794533,
+      "f1": 0.8228691687127324,
+      "tp": 3519,
+      "fp": 790,
+      "fn": 725
+    }
+  },
+  "micro": {
+    "precision": 0.8746471510716153,
+    "recall": 0.8722760921697424,
+    "f1": 0.8734600125287116,
+    "tp": 8366,
+    "fp": 1199,
+    "fn": 1225
+  },
+  "macro_f1": 0.8685693575337688,
+  "token_accuracy": 0.9721635859689054,
+  "n_tokens": 108958,
+  "n_gold_spans": 9591,
+  "n_pred_spans": 9565,
+  "invalid_transitions": 0,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1034.4774368405342,
+      "val_micro_f1": 0.8576318655671387,
+      "val_macro_f1": 0.8513006734146349,
+      "train_seconds": 39.43223881199992
+    },
+    {
+      "epoch": 2,
+      "train_loss": 236.4111286997795,
+      "val_micro_f1": 0.8734600125287116,
+      "val_macro_f1": 0.8685693575337688,
+      "train_seconds": 39.514334366000185
+    },
+    {
+      "epoch": 3,
+      "train_loss": 130.4020094871521,
+      "val_micro_f1": 0.87336019006301,
+      "val_macro_f1": 0.8682553267247073,
+      "train_seconds": 39.53704966999976
+    }
+  ],
+  "chosen_epoch": 2,
+  "settings": {
+    "model_name": "bert-base-cased",
+    "epochs": 3,
+    "lr": 2e-05,
+    "batch_size": 16,
+    "weight_decay": 0.01,
+    "max_length": 512,
+    "limit": null,
+    "name": "bert_crf"
+  },
+  "truncated_sentences": {
+    "train": 0,
+    "validation": 0,
+    "test": 0
+  },
+  "machine": {
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "python": "3.13.16",
+    "cpu_count": 2,
+    "torch": "2.11.0+cu130",
+    "torch_threads": 1,
+    "gpu": "Tesla T4"
+  },
+  "test_prediction_seconds": 9.739440712000032
+}

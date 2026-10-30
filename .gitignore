@@ -1,0 +1,26 @@
+# Course slides belong to the instructor; do not publish them
+slides/
+# Raw dataset files (downloaded again by data/bc5cdr.py)
+data/raw/
+# Model weights and caches
+models/
+*.pt
+*.bin
+*.safetensors
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+# Python virtual environments
+.venv/
+venv/
+# Secrets: never commit tokens or passwords
+.env
+*token*
+# Colab result archives (the extracted files in results/ are kept)
+*.zip
+# Private notes, kept locally only
+EXPLAIN.md
+presentation/STUDY_GUIDE.md
+presentation/speaker_notes.md

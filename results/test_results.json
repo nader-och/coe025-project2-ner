@@ -1,0 +1,284 @@
+{
+  "split": "test",
+  "results": {
+    "all_O": {
+      "per_type": {
+        "Chemical": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 5385
+        },
+        "Disease": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 4424
+        }
+      },
+      "micro": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 9809
+      },
+      "macro_f1": 0.0,
+      "token_accuracy": 0.8913839646486357,
+      "n_tokens": 116318,
+      "n_gold_spans": 9809,
+      "n_pred_spans": 0,
+      "invalid_transitions": 0,
+      "sentences_with_invalid": 0
+    },
+    "baseline": {
+      "per_type": {
+        "Chemical": {
+          "precision": 0.9155008393956351,
+          "recall": 0.6076137418755804,
+          "f1": 0.7304386650295792,
+          "tp": 3272,
+          "fp": 302,
+          "fn": 2113
+        },
+        "Disease": {
+          "precision": 0.5162610381219039,
+          "recall": 0.5418173598553345,
+          "f1": 0.5287305613764199,
+          "tp": 2397,
+          "fp": 2246,
+          "fn": 2027
+        }
+      },
+      "micro": {
+        "precision": 0.6899111597906779,
+        "recall": 0.5779386277908044,
+        "f1": 0.628980361699767,
+        "tp": 5669,
+        "fp": 2548,
+        "fn": 4140
+      },
+      "macro_f1": 0.6295846132029996,
+      "token_accuracy": 0.9444797881669217,
+      "n_tokens": 116318,
+      "n_gold_spans": 9809,
+      "n_pred_spans": 8217,
+      "invalid_transitions": 1265,
+      "sentences_with_invalid": 1027
+    },
+    "hmm": {
+      "per_type": {
+        "Chemical": {
+          "precision": 0.9455264759586123,
+          "recall": 0.5769730733519034,
+          "f1": 0.7166416791604198,
+          "tp": 3107,
+          "fp": 179,
+          "fn": 2278
+        },
+        "Disease": {
+          "precision": 0.7153072033898306,
+          "recall": 0.6105334538878843,
+          "f1": 0.6587804878048781,
+          "tp": 2701,
+          "fp": 1075,
+          "fn": 1723
+        }
+      },
+      "micro": {
+        "precision": 0.822429906542056,
+        "recall": 0.5921092873891324,
+        "f1": 0.6885187600023709,
+        "tp": 5808,
+        "fp": 1254,
+        "fn": 4001
+      },
+      "macro_f1": 0.687711083482649,
+      "token_accuracy": 0.9476005433380904,
+      "n_tokens": 116318,
+      "n_gold_spans": 9809,
+      "n_pred_spans": 7062,
+      "invalid_transitions": 0,
+      "sentences_with_invalid": 0
+    },
+    "crf": {
+      "per_type": {
+        "Chemical": {
+          "precision": 0.8985062410476775,
+          "recall": 0.8154131847725162,
+          "f1": 0.8549454828660437,
+          "tp": 4391,
+          "fp": 496,
+          "fn": 994
+        },
+        "Disease": {
+          "precision": 0.7752997601918465,
+          "recall": 0.7307866184448463,
+          "f1": 0.7523853851524319,
+          "tp": 3233,
+          "fp": 937,
+          "fn": 1191
+        }
+      },
+      "micro": {
+        "precision": 0.8417798387987192,
+        "recall": 0.7772453868895912,
+        "f1": 0.8082264390967878,
+        "tp": 7624,
+        "fp": 1433,
+        "fn": 2185
+      },
+      "macro_f1": 0.8036654340092377,
+      "token_accuracy": 0.9636943551299025,
+      "n_tokens": 116318,
+      "n_gold_spans": 9809,
+      "n_pred_spans": 9057,
+      "invalid_transitions": 0,
+      "sentences_with_invalid": 0
+    },
+    "bert_softmax": {
+      "per_type": {
+        "Chemical": {
+          "precision": 0.8822901849217639,
+          "recall": 0.9214484679665739,
+          "f1": 0.9014442728676537,
+          "tp": 4962,
+          "fp": 662,
+          "fn": 423
+        },
+        "Disease": {
+          "precision": 0.7455114822546973,
+          "recall": 0.8071880650994575,
+          "f1": 0.7751248100716301,
+          "tp": 3571,
+          "fp": 1219,
+          "fn": 853
+        }
+      },
+      "micro": {
+        "precision": 0.819377760706741,
+        "recall": 0.8699153838311755,
+        "f1": 0.8438906195915542,
+        "tp": 8533,
+        "fp": 1881,
+        "fn": 1276
+      },
+      "macro_f1": 0.8382845414696419,
+      "token_accuracy": 0.9704001100431575,
+      "n_tokens": 116318,
+      "n_gold_spans": 9809,
+      "n_pred_spans": 10414,
+      "invalid_transitions": 342,
+      "sentences_with_invalid": 294
+    },
+    "bert_crf": {
+      "per_type": {
+        "Chemical": {
+          "precision": 0.9101187111362352,
+          "recall": 0.8969359331476323,
+          "f1": 0.9034792368125701,
+          "tp": 4830,
+          "fp": 477,
+          "fn": 555
+        },
+        "Disease": {
+          "precision": 0.7886089813800657,
+          "recall": 0.8137432188065099,
+          "f1": 0.8009789743019246,
+          "tp": 3600,
+          "fp": 965,
+          "fn": 824
+        }
+      },
+      "micro": {
+        "precision": 0.8539303079416531,
+        "recall": 0.859414823121623,
+        "f1": 0.8566637874091764,
+        "tp": 8430,
+        "fp": 1442,
+        "fn": 1379
+      },
+      "macro_f1": 0.8522291055572473,
+      "token_accuracy": 0.9699788510806582,
+      "n_tokens": 116318,
+      "n_gold_spans": 9809,
+      "n_pred_spans": 9872,
+      "invalid_transitions": 0,
+      "sentences_with_invalid": 0
+    }
+  },
+  "local_test_prediction_timing": {
+    "baseline": {
+      "seconds_total": 0.027044599992223084,
+      "n_sentences": 5865,
+      "n_tokens": 116318,
+      "ms_per_sentence": 0.004611184994411438,
+      "sentences_per_second": 216863.99509279238,
+      "machine": {
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+        "python": "3.11.2",
+        "cpu_count": 8,
+        "torch": "2.14.1+cpu",
+        "torch_threads": 4,
+        "gpu": null
+      }
+    },
+    "hmm": {
+      "seconds_total": 0.8142279000021517,
+      "n_sentences": 5865,
+      "n_tokens": 116318,
+      "ms_per_sentence": 0.13882828644537967,
+      "sentences_per_second": 7203.143002081482,
+      "machine": {
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+        "python": "3.11.2",
+        "cpu_count": 8,
+        "torch": "2.14.1+cpu",
+        "torch_threads": 4,
+        "gpu": null
+      }
+    },
+    "crf": {
+      "seconds_total": 2.6516969999065623,
+      "n_sentences": 5865,
+      "n_tokens": 116318,
+      "ms_per_sentence": 0.4521222506234548,
+      "sentences_per_second": 2211.7911662632137,
+      "machine": {
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+        "python": "3.11.2",
+        "cpu_count": 8,
+        "torch": "2.14.1+cpu",
+        "torch_threads": 4,
+        "gpu": null
+      }
+    }
+  },
+  "local_machine": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "python": "3.11.2",
+    "cpu_count": 8,
+    "torch": "2.14.1+cpu",
+    "torch_threads": 4,
+    "gpu": null
+  },
+  "speed_table_source": "results/timing/timing_colab.json (same machine for all methods)",
+  "colab_machine": {
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "python": "3.13.16",
+    "cpu_count": 2,
+    "torch": "2.11.0+cu130",
+    "torch_threads": 1,
+    "gpu": "Tesla T4"
+  }
+}

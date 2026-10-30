@@ -1,0 +1,9 @@
+# Week 1, Slide 34: HuggingFace + PyTorch
+torch>=2.1
+transformers>=4.40
+huggingface_hub>=0.23
+numpy
+# Tests, figures and slides
+pytest
+matplotlib
+python-pptx

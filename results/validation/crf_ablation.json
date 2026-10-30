@@ -1,0 +1,50 @@
+{
+  "full": {
+    "val_micro_f1": 0.8253985467953584,
+    "val_macro_f1": 0.8193854968171581,
+    "per_type_f1": {
+      "Chemical": 0.8763119176066699,
+      "Disease": 0.7624590760276464
+    }
+  },
+  "without_word": {
+    "val_micro_f1": 0.7708437343984024,
+    "val_macro_f1": 0.7624863698429831,
+    "per_type_f1": {
+      "Chemical": 0.8330522765598651,
+      "Disease": 0.6919204631261012
+    },
+    "change_vs_full": -0.05455481239695603,
+    "best_epoch": 8
+  },
+  "without_case_shape": {
+    "val_micro_f1": 0.8216269732137946,
+    "val_macro_f1": 0.8160361208944322,
+    "per_type_f1": {
+      "Chemical": 0.8708325014973048,
+      "Disease": 0.7612397402915595
+    },
+    "change_vs_full": -0.0037715735815637697,
+    "best_epoch": 8
+  },
+  "without_suffix": {
+    "val_micro_f1": 0.7700633275762809,
+    "val_macro_f1": 0.7666691341607812,
+    "per_type_f1": {
+      "Chemical": 0.7997911227154046,
+      "Disease": 0.7335471456061577
+    },
+    "change_vs_full": -0.05533521921907747,
+    "best_epoch": 7
+  },
+  "without_neighbors": {
+    "val_micro_f1": 0.8145394916643892,
+    "val_macro_f1": 0.8078558155351967,
+    "per_type_f1": {
+      "Chemical": 0.8690253276830591,
+      "Disease": 0.7466863033873343
+    },
+    "change_vs_full": -0.010859055130969186,
+    "best_epoch": 6
+  }
+}

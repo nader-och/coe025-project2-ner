@@ -1,0 +1,778 @@
+{
+  "split": "test",
+  "methods": {
+    "baseline": {
+      "error_categories": {
+        "boundary": 1690,
+        "type": 9,
+        "missed": 2742,
+        "spurious": 849
+      },
+      "error_categories_by_type": {
+        "Chemical/missed": 1933,
+        "Chemical/spurious": 99,
+        "Chemical/boundary": 203,
+        "Disease/missed": 823,
+        "Disease/boundary": 1471,
+        "Disease/spurious": 775
+      },
+      "slices": {
+        "Chemical/seen": {
+          "recall": 0.9817407181984176,
+          "found": 3226,
+          "total": 3286
+        },
+        "Chemical/unseen": {
+          "recall": 0.02191519771319676,
+          "found": 46,
+          "total": 2099
+        },
+        "Disease/seen": {
+          "recall": 0.8202567760342369,
+          "found": 2300,
+          "total": 2804
+        },
+        "Disease/unseen": {
+          "recall": 0.059876543209876544,
+          "found": 97,
+          "total": 1620
+        },
+        "all/seen": {
+          "recall": 0.9073891625615763,
+          "found": 5526,
+          "total": 6090
+        },
+        "all/unseen": {
+          "recall": 0.03845119655821457,
+          "found": 143,
+          "total": 3719
+        }
+      },
+      "invalid_patterns": {
+        "O -> I-Disease": 1124,
+        "O -> I-Chemical": 107,
+        "B-Chemical -> I-Disease": 13,
+        "START -> I-Disease": 12,
+        "START -> I-Chemical": 5,
+        "B-Disease -> I-Chemical": 4
+      }
+    },
+    "hmm": {
+      "error_categories": {
+        "boundary": 694,
+        "type": 11,
+        "missed": 3217,
+        "spurious": 549
+      },
+      "error_categories_by_type": {
+        "Chemical/missed": 2181,
+        "Chemical/spurious": 84,
+        "Chemical/boundary": 95,
+        "Disease/missed": 1074,
+        "Disease/spurious": 493,
+        "Disease/boundary": 582
+      },
+      "slices": {
+        "Chemical/seen": {
+          "recall": 0.9138770541692027,
+          "found": 3003,
+          "total": 3286
+        },
+        "Chemical/unseen": {
+          "recall": 0.04954740352548833,
+          "found": 104,
+          "total": 2099
+        },
+        "Disease/seen": {
+          "recall": 0.822753209700428,
+          "found": 2307,
+          "total": 2804
+        },
+        "Disease/unseen": {
+          "recall": 0.24320987654320989,
+          "found": 394,
+          "total": 1620
+        },
+        "all/seen": {
+          "recall": 0.8719211822660099,
+          "found": 5310,
+          "total": 6090
+        },
+        "all/unseen": {
+          "recall": 0.1339069642376983,
+          "found": 498,
+          "total": 3719
+        }
+      },
+      "invalid_patterns": {}
+    },
+    "crf": {
+      "error_categories": {
+        "boundary": 689,
+        "type": 84,
+        "missed": 1367,
+        "spurious": 660
+      },
+      "error_categories_by_type": {
+        "Chemical/spurious": 388,
+        "Chemical/missed": 894,
+        "Chemical/boundary": 108,
+        "Disease/spurious": 394,
+        "Disease/missed": 606,
+        "Disease/boundary": 543
+      },
+      "slices": {
+        "Chemical/seen": {
+          "recall": 0.975958612294583,
+          "found": 3207,
+          "total": 3286
+        },
+        "Chemical/unseen": {
+          "recall": 0.5640781324440209,
+          "found": 1184,
+          "total": 2099
+        },
+        "Disease/seen": {
+          "recall": 0.9069186875891584,
+          "found": 2543,
+          "total": 2804
+        },
+        "Disease/unseen": {
+          "recall": 0.42592592592592593,
+          "found": 690,
+          "total": 1620
+        },
+        "all/seen": {
+          "recall": 0.9441707717569786,
+          "found": 5750,
+          "total": 6090
+        },
+        "all/unseen": {
+          "recall": 0.5038988975531057,
+          "found": 1874,
+          "total": 3719
+        }
+      },
+      "invalid_patterns": {}
+    },
+    "bert_softmax": {
+      "error_categories": {
+        "boundary": 721,
+        "type": 64,
+        "missed": 546,
+        "spurious": 1096
+      },
+      "error_categories_by_type": {
+        "Chemical/spurious": 566,
+        "Chemical/missed": 324,
+        "Chemical/boundary": 96,
+        "Disease/boundary": 597,
+        "Disease/missed": 304,
+        "Disease/spurious": 622
+      },
+      "slices": {
+        "Chemical/seen": {
+          "recall": 0.9713937918441875,
+          "found": 3192,
+          "total": 3286
+        },
+        "Chemical/unseen": {
+          "recall": 0.8432586946164841,
+          "found": 1770,
+          "total": 2099
+        },
+        "Disease/seen": {
+          "recall": 0.8969329529243937,
+          "found": 2515,
+          "total": 2804
+        },
+        "Disease/unseen": {
+          "recall": 0.6518518518518519,
+          "found": 1056,
+          "total": 1620
+        },
+        "all/seen": {
+          "recall": 0.9371100164203613,
+          "found": 5707,
+          "total": 6090
+        },
+        "all/unseen": {
+          "recall": 0.7598816886259747,
+          "found": 2826,
+          "total": 3719
+        }
+      },
+      "invalid_patterns": {
+        "O -> I-Disease": 240,
+        "O -> I-Chemical": 73,
+        "B-Chemical -> I-Disease": 26,
+        "I-Chemical -> I-Disease": 2,
+        "B-Disease -> I-Chemical": 1
+      }
+    },
+    "bert_crf": {
+      "error_categories": {
+        "boundary": 584,
+        "type": 52,
+        "missed": 706,
+        "spurious": 806
+      },
+      "error_categories_by_type": {
+        "Chemical/spurious": 389,
+        "Chemical/missed": 458,
+        "Chemical/boundary": 88,
+        "Disease/boundary": 477,
+        "Disease/missed": 330,
+        "Disease/spurious": 488
+      },
+      "slices": {
+        "Chemical/seen": {
+          "recall": 0.95830797321972,
+          "found": 3149,
+          "total": 3286
+        },
+        "Chemical/unseen": {
+          "recall": 0.8008575512148642,
+          "found": 1681,
+          "total": 2099
+        },
+        "Disease/seen": {
+          "recall": 0.890870185449358,
+          "found": 2498,
+          "total": 2804
+        },
+        "Disease/unseen": {
+          "recall": 0.6802469135802469,
+          "found": 1102,
+          "total": 1620
+        },
+        "all/seen": {
+          "recall": 0.9272577996715927,
+          "found": 5647,
+          "total": 6090
+        },
+        "all/unseen": {
+          "recall": 0.7483194407098682,
+          "found": 2783,
+          "total": 3719
+        }
+      },
+      "invalid_patterns": {}
+    }
+  },
+  "structured_decoding_check": {
+    "sentences_with_invalid_softmax_output": 294,
+    "bert_softmax": {
+      "micro_f1": 0.680306905370844,
+      "tp": 665,
+      "fp": 445,
+      "fn": 180,
+      "fully_correct_sentences": 0
+    },
+    "bert_crf": {
+      "micro_f1": 0.7687959299039006,
+      "tp": 680,
+      "fp": 244,
+      "fn": 165,
+      "fully_correct_sentences": 88
+    }
+  },
+  "examples": [
+    {
+      "rule": "baseline wrong, HMM right (label transitions help)",
+      "sentence_index": 641,
+      "tokens": [
+        "Baboon",
+        "syndrome",
+        "induced",
+        "by",
+        "ketoconazole",
+        "."
+      ],
+      "gold": [
+        "B-Disease",
+        "I-Disease",
+        "O",
+        "O",
+        "B-Chemical",
+        "O"
+      ],
+      "predictions": {
+        "baseline": [
+          "O",
+          "I-Disease",
+          "O",
+          "O",
+          "B-Chemical",
+          "O"
+        ],
+        "hmm": [
+          "B-Disease",
+          "I-Disease",
+          "O",
+          "O",
+          "B-Chemical",
+          "O"
+        ],
+        "crf": [
+          "O",
+          "O",
+          "O",
+          "O",
+          "B-Chemical",
+          "O"
+        ],
+        "bert_softmax": [
+          "B-Disease",
+          "I-Disease",
+          "O",
+          "O",
+          "B-Chemical",
+          "O"
+        ],
+        "bert_crf": [
+          "B-Disease",
+          "I-Disease",
+          "O",
+          "O",
+          "B-Chemical",
+          "O"
+        ]
+      }
+    },
+    {
+      "rule": "HMM wrong, CRF right (rich features help)",
+      "sentence_index": 507,
+      "tokens": [
+        "Fluconazole",
+        "associated",
+        "agranulocytosis",
+        "and",
+        "thrombocytopenia",
+        "."
+      ],
+      "gold": [
+        "B-Chemical",
+        "O",
+        "B-Disease",
+        "O",
+        "B-Disease",
+        "O"
+      ],
+      "predictions": {
+        "baseline": [
+          "O",
+          "O",
+          "B-Disease",
+          "O",
+          "B-Disease",
+          "O"
+        ],
+        "hmm": [
+          "O",
+          "O",
+          "B-Disease",
+          "O",
+          "B-Disease",
+          "O"
+        ],
+        "crf": [
+          "B-Chemical",
+          "O",
+          "B-Disease",
+          "O",
+          "B-Disease",
+          "O"
+        ],
+        "bert_softmax": [
+          "B-Chemical",
+          "O",
+          "B-Disease",
+          "O",
+          "B-Disease",
+          "O"
+        ],
+        "bert_crf": [
+          "B-Chemical",
+          "O",
+          "B-Disease",
+          "O",
+          "B-Disease",
+          "O"
+        ]
+      }
+    },
+    {
+      "rule": "CRF wrong, BERT + softmax right (context from the encoder)",
+      "sentence_index": 219,
+      "tokens": [
+        "Linezolid",
+        "-",
+        "induced",
+        "optic",
+        "neuropathy",
+        "."
+      ],
+      "gold": [
+        "B-Chemical",
+        "O",
+        "O",
+        "B-Disease",
+        "I-Disease",
+        "O"
+      ],
+      "predictions": {
+        "baseline": [
+          "O",
+          "O",
+          "O",
+          "B-Disease",
+          "I-Disease",
+          "O"
+        ],
+        "hmm": [
+          "O",
+          "O",
+          "O",
+          "B-Disease",
+          "I-Disease",
+          "O"
+        ],
+        "crf": [
+          "O",
+          "O",
+          "O",
+          "B-Disease",
+          "I-Disease",
+          "O"
+        ],
+        "bert_softmax": [
+          "B-Chemical",
+          "O",
+          "O",
+          "B-Disease",
+          "I-Disease",
+          "O"
+        ],
+        "bert_crf": [
+          "B-Chemical",
+          "O",
+          "O",
+          "B-Disease",
+          "I-Disease",
+          "O"
+        ]
+      }
+    },
+    {
+      "rule": "BERT + softmax invalid IOB2, BERT + CRF right",
+      "sentence_index": 2180,
+      "tokens": [
+        "Oral",
+        "procaterol",
+        "50",
+        "micrograms",
+        "b",
+        "."
+      ],
+      "gold": [
+        "O",
+        "B-Chemical",
+        "O",
+        "O",
+        "O",
+        "O"
+      ],
+      "predictions": {
+        "baseline": [
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "hmm": [
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "crf": [
+          "O",
+          "B-Chemical",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "bert_softmax": [
+          "O",
+          "I-Chemical",
+          "I-Chemical",
+          "O",
+          "O",
+          "O"
+        ],
+        "bert_crf": [
+          "O",
+          "B-Chemical",
+          "O",
+          "O",
+          "O",
+          "O"
+        ]
+      }
+    },
+    {
+      "rule": "BERT + CRF wrong, BERT + softmax right (CRF is not always better)",
+      "sentence_index": 3623,
+      "tokens": [
+        "The",
+        "Olanzipine",
+        "HGGW",
+        "Study",
+        "Group",
+        "."
+      ],
+      "gold": [
+        "O",
+        "B-Chemical",
+        "O",
+        "O",
+        "O",
+        "O"
+      ],
+      "predictions": {
+        "baseline": [
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "hmm": [
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "crf": [
+          "O",
+          "B-Chemical",
+          "I-Chemical",
+          "O",
+          "O",
+          "O"
+        ],
+        "bert_softmax": [
+          "O",
+          "B-Chemical",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "bert_crf": [
+          "O",
+          "B-Chemical",
+          "I-Chemical",
+          "O",
+          "O",
+          "O"
+        ]
+      }
+    },
+    {
+      "rule": "unseen name: only BERT methods right",
+      "sentence_index": 1516,
+      "tokens": [
+        "Hypertension",
+        "in",
+        "diabetics",
+        "prone",
+        "to",
+        "hypoglycaemia"
+      ],
+      "gold": [
+        "B-Disease",
+        "O",
+        "B-Disease",
+        "O",
+        "O",
+        "B-Disease"
+      ],
+      "predictions": {
+        "baseline": [
+          "B-Disease",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "hmm": [
+          "B-Disease",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "crf": [
+          "B-Disease",
+          "O",
+          "O",
+          "O",
+          "O",
+          "B-Disease"
+        ],
+        "bert_softmax": [
+          "B-Disease",
+          "O",
+          "B-Disease",
+          "O",
+          "O",
+          "B-Disease"
+        ],
+        "bert_crf": [
+          "B-Disease",
+          "O",
+          "B-Disease",
+          "O",
+          "O",
+          "B-Disease"
+        ]
+      }
+    },
+    {
+      "rule": "every method wrong",
+      "sentence_index": 3593,
+      "tokens": [
+        "Patterns",
+        "of",
+        "sulfadiazine",
+        "acute",
+        "nephrotoxicity",
+        "."
+      ],
+      "gold": [
+        "O",
+        "O",
+        "B-Chemical",
+        "B-Disease",
+        "I-Disease",
+        "O"
+      ],
+      "predictions": {
+        "baseline": [
+          "O",
+          "O",
+          "O",
+          "O",
+          "B-Disease",
+          "O"
+        ],
+        "hmm": [
+          "O",
+          "O",
+          "O",
+          "O",
+          "B-Disease",
+          "O"
+        ],
+        "crf": [
+          "O",
+          "O",
+          "B-Chemical",
+          "O",
+          "B-Disease",
+          "O"
+        ],
+        "bert_softmax": [
+          "O",
+          "O",
+          "B-Chemical",
+          "O",
+          "B-Disease",
+          "O"
+        ],
+        "bert_crf": [
+          "O",
+          "O",
+          "B-Chemical",
+          "O",
+          "B-Disease",
+          "O"
+        ]
+      }
+    },
+    {
+      "rule": "boundary error by the best method",
+      "sentence_index": 3705,
+      "tokens": [
+        "Viracept",
+        "and",
+        "irregular",
+        "heartbeat",
+        "warning",
+        "."
+      ],
+      "gold": [
+        "B-Chemical",
+        "O",
+        "B-Disease",
+        "I-Disease",
+        "O",
+        "O"
+      ],
+      "predictions": {
+        "baseline": [
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "hmm": [
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "crf": [
+          "O",
+          "O",
+          "O",
+          "O",
+          "O",
+          "O"
+        ],
+        "bert_softmax": [
+          "O",
+          "I-Disease",
+          "B-Disease",
+          "I-Disease",
+          "O",
+          "O"
+        ],
+        "bert_crf": [
+          "B-Disease",
+          "I-Disease",
+          "I-Disease",
+          "I-Disease",
+          "O",
+          "O"
+        ]
+      }
+    }
+  ]
+}

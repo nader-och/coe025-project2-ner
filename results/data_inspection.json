@@ -1,0 +1,152 @@
+{
+  "dataset": "tner/bc5cdr",
+  "id2label": {
+    "0": "O",
+    "1": "B-Chemical",
+    "2": "B-Disease",
+    "3": "I-Disease",
+    "4": "I-Chemical"
+  },
+  "scheme_check": "IOB2 if no gold sequence has an illegal transition",
+  "splits": {
+    "train": {
+      "sentences": 5228,
+      "tokens": 109322,
+      "max_sentence_length": 133,
+      "mean_sentence_length": 20.91,
+      "label_counts": {
+        "B-Chemical": 5203,
+        "O": 96796,
+        "B-Disease": 4182,
+        "I-Disease": 2570,
+        "I-Chemical": 571
+      },
+      "entity_counts": {
+        "Chemical": 5203,
+        "Disease": 4182
+      },
+      "O_token_share": 0.8854,
+      "invalid_iob2_transitions_in_gold": 0
+    },
+    "validation": {
+      "sentences": 5330,
+      "tokens": 108958,
+      "max_sentence_length": 232,
+      "mean_sentence_length": 20.44,
+      "label_counts": {
+        "B-Disease": 4244,
+        "I-Disease": 2416,
+        "O": 96413,
+        "B-Chemical": 5347,
+        "I-Chemical": 538
+      },
+      "entity_counts": {
+        "Disease": 4244,
+        "Chemical": 5347
+      },
+      "O_token_share": 0.8849,
+      "invalid_iob2_transitions_in_gold": 0
+    },
+    "test": {
+      "sentences": 5865,
+      "tokens": 116318,
+      "max_sentence_length": 135,
+      "mean_sentence_length": 19.83,
+      "label_counts": {
+        "B-Chemical": 5385,
+        "O": 103684,
+        "B-Disease": 4424,
+        "I-Disease": 2424,
+        "I-Chemical": 401
+      },
+      "entity_counts": {
+        "Chemical": 5385,
+        "Disease": 4424
+      },
+      "O_token_share": 0.8914,
+      "invalid_iob2_transitions_in_gold": 0
+    }
+  },
+  "overlap_audit": {
+    "train&validation": {
+      "identical_sentences": 55,
+      "identical_sentences_with_10+_tokens": 0,
+      "examples": [
+        "5 mg / kg s .",
+        "A case report .",
+        "The effects of i ."
+      ]
+    },
+    "train&test": {
+      "identical_sentences": 64,
+      "identical_sentences_with_10+_tokens": 0,
+      "examples": [
+        "4 ; 95 % CI , 1 .",
+        "7 ; 95 % CI , 1 .",
+        "The effects of i ."
+      ]
+    },
+    "validation&test": {
+      "identical_sentences": 55,
+      "identical_sentences_with_10+_tokens": 1,
+      "examples": [
+        "A case report .",
+        "The effects of i .",
+        "Long term hormone therapy for perimenopausal and postmenopausal women ."
+      ]
+    }
+  },
+  "unseen_entities": {
+    "validation": {
+      "entities": 9591,
+      "unseen_in_train": 3750,
+      "unseen_share": 0.391
+    },
+    "test": {
+      "entities": 9809,
+      "unseen_in_train": 3975,
+      "unseen_share": 0.4052
+    }
+  },
+  "example_sentence": {
+    "tokens": [
+      "Naloxone",
+      "reverses",
+      "the",
+      "antihypertensive",
+      "effect",
+      "of",
+      "clonidine",
+      "."
+    ],
+    "tags": [
+      "B-Chemical",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-Chemical",
+      "O"
+    ]
+  },
+  "bert_length_check": {
+    "model": "bert-base-cased",
+    "max_length_limit": 512,
+    "train": {
+      "max_subword_length": 250,
+      "sentences_over_limit": 0,
+      "sentences_over_256": 0
+    },
+    "validation": {
+      "max_subword_length": 326,
+      "sentences_over_limit": 0,
+      "sentences_over_256": 2
+    },
+    "test": {
+      "max_subword_length": 193,
+      "sentences_over_limit": 0,
+      "sentences_over_256": 0
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "all_O": {
+    "per_type": {
+      "Chemical": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 5347
+      },
+      "Disease": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 4244
+      }
+    },
+    "micro": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 9591
+    },
+    "macro_f1": 0.0,
+    "token_accuracy": 0.8848638925090402,
+    "n_tokens": 108958,
+    "n_gold_spans": 9591,
+    "n_pred_spans": 0
+  },
+  "baseline_lowercase=False": {
+    "per_type": {
+      "Chemical": {
+        "precision": 0.8947652455477604,
+        "recall": 0.6201608378530017,
+        "f1": 0.7325748370705844,
+        "tp": 3316,
+        "fp": 390,
+        "fn": 2031
+      },
+      "Disease": {
+        "precision": 0.5122830741491999,
+        "recall": 0.5355796418473139,
+        "f1": 0.5236723879737357,
+        "tp": 2273,
+        "fp": 2164,
+        "fn": 1971
+      }
+    },
+    "micro": {
+      "precision": 0.6863563797126366,
+      "recall": 0.5827338129496403,
+      "f1": 0.6303146498251946,
+      "tp": 5589,
+      "fp": 2554,
+      "fn": 4002
+    },
+    "macro_f1": 0.6281236125221601,
+    "token_accuracy": 0.9411332807136695,
+    "n_tokens": 108958,
+    "n_gold_spans": 9591,
+    "n_pred_spans": 8143,
+    "invalid_transitions": 1277,
+    "timing_validation": {
+      "seconds_total": 0.04657240002416074,
+      "n_sentences": 5330,
+      "n_tokens": 108958,
+      "ms_per_sentence": 0.008737786120855674,
+      "sentences_per_second": 114445.46549533441,
+      "machine": {
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+        "python": "3.11.2",
+        "cpu_count": 8,
+        "torch": "2.14.1+cpu",
+        "torch_threads": 4,
+        "gpu": null
+      }
+    }
+  },
+  "baseline_lowercase=True": {
+    "per_type": {
+      "Chemical": {
+        "precision": 0.9045346062052506,
+        "recall": 0.6379278099869086,
+        "f1": 0.7481903926299627,
+        "tp": 3411,
+        "fp": 360,
+        "fn": 1936
+      },
+      "Disease": {
+        "precision": 0.5147447183098591,
+        "recall": 0.5511310084825636,
+        "f1": 0.5323167956304051,
+        "tp": 2339,
+        "fp": 2205,
+        "fn": 1905
+      }
+    },
+    "micro": {
+      "precision": 0.6915213469633193,
+      "recall": 0.5995203836930456,
+      "f1": 0.6422428236345359,
+      "tp": 5750,
+      "fp": 2565,
+      "fn": 3841
+    },
+    "macro_f1": 0.6402535941301839,
+    "token_accuracy": 0.9426384478422879,
+    "n_tokens": 108958,
+    "n_gold_spans": 9591,
+    "n_pred_spans": 8315,
+    "invalid_transitions": 1217,
+    "timing_validation": {
+      "seconds_total": 0.05776460003107786,
+      "n_sentences": 5330,
+      "n_tokens": 108958,
+      "ms_per_sentence": 0.010837636028344814,
+      "sentences_per_second": 92271.04484636635,
+      "machine": {
+        "platform": "Windows-10-10.0.26300-SP0",
+        "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+        "python": "3.11.2",
+        "cpu_count": 8,
+        "torch": "2.14.1+cpu",
+        "torch_threads": 4,
+        "gpu": null
+      }
+    }
+  },
+  "chosen_setting": {
+    "lowercase": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "machine": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "python": "3.11.2",
+    "cpu_count": 8,
+    "torch": "2.14.1+cpu",
+    "torch_threads": 4,
+    "gpu": null
+  },
+  "split": "validation",
+  "protocol": "wall-clock time of predict() on the listed sentences, words in -> word-level labels out",
+  "methods": {
+    "baseline_cpu": {
+      "method": "baseline",
+      "device": "cpu",
+      "n_sentences": 5330,
+      "seconds": 0.02562720002606511,
+      "ms_per_sentence": 0.004808105070556306
+    },
+    "hmm_cpu": {
+      "method": "hmm",
+      "device": "cpu",
+      "n_sentences": 5330,
+      "seconds": 0.7913225999800488,
+      "ms_per_sentence": 0.1484657786078891
+    },
+    "crf_cpu": {
+      "method": "crf",
+      "device": "cpu",
+      "n_sentences": 5330,
+      "seconds": 2.4734499999321997,
+      "ms_per_sentence": 0.46406191368333954
+    }
+  }
+}

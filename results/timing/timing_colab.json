@@ -1,0 +1,64 @@
+{
+  "machine": {
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "python": "3.13.16",
+    "cpu_count": 2,
+    "torch": "2.11.0+cu130",
+    "torch_threads": 1,
+    "gpu": "Tesla T4"
+  },
+  "split": "validation",
+  "protocol": "wall-clock time of predict() on the listed sentences, words in -> word-level labels out",
+  "methods": {
+    "baseline_cpu": {
+      "method": "baseline",
+      "device": "cpu",
+      "n_sentences": 5330,
+      "seconds": 0.042863512999701925,
+      "ms_per_sentence": 0.008041934896754583
+    },
+    "hmm_cpu": {
+      "method": "hmm",
+      "device": "cpu",
+      "n_sentences": 5330,
+      "seconds": 1.0948112109999784,
+      "ms_per_sentence": 0.20540548048780083
+    },
+    "crf_cpu": {
+      "method": "crf",
+      "device": "cpu",
+      "n_sentences": 5330,
+      "seconds": 3.097793055999773,
+      "ms_per_sentence": 0.5811994476547416
+    },
+    "bert_softmax_gpu": {
+      "method": "bert_softmax",
+      "device": "gpu",
+      "n_sentences": 5330,
+      "seconds": 7.846531629999845,
+      "ms_per_sentence": 1.4721447711069127
+    },
+    "bert_softmax_cpu": {
+      "method": "bert_softmax",
+      "device": "cpu",
+      "n_sentences": 500,
+      "seconds": 65.92422863499996,
+      "ms_per_sentence": 131.84845726999993
+    },
+    "bert_crf_gpu": {
+      "method": "bert_crf",
+      "device": "gpu",
+      "n_sentences": 5330,
+      "seconds": 9.671778251999967,
+      "ms_per_sentence": 1.814592542589112
+    },
+    "bert_crf_cpu": {
+      "method": "bert_crf",
+      "device": "cpu",
+      "n_sentences": 500,
+      "seconds": 62.70255995300022,
+      "ms_per_sentence": 125.40511990600045
+    }
+  }
+}

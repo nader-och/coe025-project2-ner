@@ -1,0 +1,60 @@
+Full feature CRF, l2=0.0
+  epoch 1: loss=3.7581 val micro F1=0.7786 (20s)
+  epoch 2: loss=0.9047 val micro F1=0.8108 (20s)
+  epoch 3: loss=0.5108 val micro F1=0.8190 (20s)
+  epoch 4: loss=0.3480 val micro F1=0.8248 (21s)
+  epoch 5: loss=0.2617 val micro F1=0.8251 (21s)
+  epoch 6: loss=0.2078 val micro F1=0.8250 (20s)
+  epoch 7: loss=0.1712 val micro F1=0.8251 (20s)
+  epoch 8: loss=0.1443 val micro F1=0.8249 (19s)
+CRF                    | micro P=0.8603 | R=0.7926 | F1=0.8251 | macro F1=0.8184 | Chemical F1=0.8777 | Disease F1=0.7592 | token acc=0.9636 | invalid: 0
+Full feature CRF, l2=1e-06
+  epoch 1: loss=3.7584 val micro F1=0.7784 (21s)
+  epoch 2: loss=0.9074 val micro F1=0.8111 (20s)
+  epoch 3: loss=0.5144 val micro F1=0.8183 (20s)
+  epoch 4: loss=0.3520 val micro F1=0.8251 (17s)
+  epoch 5: loss=0.2660 val micro F1=0.8251 (20s)
+  epoch 6: loss=0.2123 val micro F1=0.8253 (8s)
+  epoch 7: loss=0.1759 val micro F1=0.8252 (6s)
+  epoch 8: loss=0.1492 val micro F1=0.8254 (7s)
+CRF                    | micro P=0.8599 | R=0.7936 | F1=0.8254 | macro F1=0.8194 | Chemical F1=0.8763 | Disease F1=0.7625 | token acc=0.9628 | invalid: 0
+Ablation: without word
+  epoch 1: loss=4.5576 val micro F1=0.7113 (6s)
+  epoch 2: loss=1.6167 val micro F1=0.7493 (8s)
+  epoch 3: loss=1.1557 val micro F1=0.7611 (7s)
+  epoch 4: loss=0.9428 val micro F1=0.7697 (7s)
+  epoch 5: loss=0.8163 val micro F1=0.7706 (7s)
+  epoch 6: loss=0.7325 val micro F1=0.7696 (7s)
+  epoch 7: loss=0.6730 val micro F1=0.7694 (7s)
+  epoch 8: loss=0.6275 val micro F1=0.7708 (6s)
+CRF -word              | micro P=0.8236 | R=0.7244 | F1=0.7708 | macro F1=0.7625 | Chemical F1=0.8331 | Disease F1=0.6919 | token acc=0.9535
+Ablation: without case_shape
+  epoch 1: loss=4.0743 val micro F1=0.7610 (6s)
+  epoch 2: loss=1.0147 val micro F1=0.8031 (6s)
+  epoch 3: loss=0.5712 val micro F1=0.8133 (6s)
+  epoch 4: loss=0.3896 val micro F1=0.8210 (6s)
+  epoch 5: loss=0.2935 val micro F1=0.8205 (6s)
+  epoch 6: loss=0.2346 val micro F1=0.8203 (6s)
+  epoch 7: loss=0.1941 val micro F1=0.8214 (6s)
+  epoch 8: loss=0.1647 val micro F1=0.8216 (16s)
+CRF -case_shape        | micro P=0.8695 | R=0.7788 | F1=0.8216 | macro F1=0.8160 | Chemical F1=0.8708 | Disease F1=0.7612 | token acc=0.9621
+Ablation: without suffix
+  epoch 1: loss=5.3130 val micro F1=0.5721 (20s)
+  epoch 2: loss=1.7215 val micro F1=0.7025 (19s)
+  epoch 3: loss=0.9874 val micro F1=0.7431 (19s)
+  epoch 4: loss=0.6624 val micro F1=0.7577 (21s)
+  epoch 5: loss=0.4869 val micro F1=0.7620 (20s)
+  epoch 6: loss=0.3790 val micro F1=0.7642 (20s)
+  epoch 7: loss=0.3067 val micro F1=0.7701 (19s)
+  epoch 8: loss=0.2557 val micro F1=0.7683 (22s)
+CRF -suffix            | micro P=0.8598 | R=0.6973 | F1=0.7701 | macro F1=0.7667 | Chemical F1=0.7998 | Disease F1=0.7335 | token acc=0.9560
+Ablation: without neighbors
+  epoch 1: loss=4.2883 val micro F1=0.7409 (14s)
+  epoch 2: loss=1.3189 val micro F1=0.7912 (5s)
+  epoch 3: loss=0.8519 val micro F1=0.8022 (6s)
+  epoch 4: loss=0.6417 val micro F1=0.8114 (6s)
+  epoch 5: loss=0.5286 val micro F1=0.8100 (5s)
+  epoch 6: loss=0.4564 val micro F1=0.8145 (5s)
+  epoch 7: loss=0.4068 val micro F1=0.8119 (5s)
+  epoch 8: loss=0.3720 val micro F1=0.8113 (5s)
+CRF -neighbors         | micro P=0.8560 | R=0.7769 | F1=0.8145 | macro F1=0.8079 | Chemical F1=0.8690 | Disease F1=0.7467 | token acc=0.9617
